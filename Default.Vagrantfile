@@ -74,10 +74,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |atg_config|
   # revert to snapshot taken earlier
 
   # setup CRS with prod, CA - internal preview
-  # atg_config.vm.provision "shell", path: "scripts/atg/setup-ps-am.sh", privileged: false
+  atg_config.vm.provision "shell", path: "scripts/atg/setup-ps-am.sh", privileged: false
   
   # setup CRS simple config - tested for 11.1 - working
-  atg_config.vm.provision "shell", path: "scripts/atg/setup-crs-simple-nonswitch.sh", privileged: false
+  # atg_config.vm.provision "shell", path: "scripts/atg/setup-crs-simple-nonswitch.sh", privileged: false
   
   # setup full CRS with preview staging and switching
   # atg_config.vm.provision "shell", path: "scripts/atg/setup-crs-pre-stg-switch.sh", privileged: false

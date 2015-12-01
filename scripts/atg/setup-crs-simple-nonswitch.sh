@@ -5,7 +5,10 @@ cp /vagrant/software/mysql-connector-java-5.1.36-bin.jar ~/ATG/ATG11.1/mysql/
 
 # convenience for most object updates:
 # install jcliff for simpler update using jboss-cli
-sudo rpm -ivh /vagrant/software/jcliff-2.10.7-1.noarch.rpm
+# sudo rpm -ivh /vagrant/software/jcliff-2.10.7-1.noarch.rpm
+# added updated rpm from interwebs to smush it in and hopefully stick to the wall
+# Matt Huston
+sudo rpm -ivh /vagrant/software/jcliff-2.10.15-1.noarch.rpm
 
 # need to setup jboss server
 # add mysql driver to jboss as module - only once

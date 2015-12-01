@@ -3,7 +3,11 @@
 
 # convenience for most object updates:
 # install jcliff (rpm command)
-sudo rpm -i /vagrant/software/jcliff-2.10.7-1.noarch.rpm
+# sudo rpm -i /vagrant/software/jcliff-2.10.7-1.noarch.rpm
+# added newer version rpm found on intarwebs to hopefully smush it in and stick to the wall
+# Matt Huston
+sudo rpm -i /vagrant/software/jcliff-2.10.15-1.noarch.rpm
+
 
 # need to setup jboss server
 # add mysql driver to jboss as module - only once
